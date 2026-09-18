@@ -19,3 +19,59 @@ p {
     line-height: 1.6; /* Espaçamento entre as linhas */
     padding: 0 20px; /* Espaçamento interno nas laterais */
 }
+
+/* Configuração básica para o menu */
+.menu-navegacao {
+    background-color: #2c3e50; /* Cor de fundo escura */
+    display: flex;
+    justify-content: space-between; /* Separa o logo dos links */
+    align-items: center; /* Centraliza tudo verticalmente */
+    padding: 15px 30px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do Logo */
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Remove os pontos da lista e alinha os itens lado a lado */
+.links-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Espaçamento entre cada link */
+}
+
+/* Estilo dos links de texto */
+.links-menu a {
+    color: #ffffff;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cor */
+    border-radius: 4px;
+}
+
+/* Efeito ao passar o mouse por cima dos links */
+.links-menu a:hover {
+    background-color: #34495e; /* Fundo um pouco mais claro */
+    color: #3498db; /* Texto muda para azul */
+}
+
+/* Responsividade: Ajustes para telas menores (Celular) */
+@media (max-width: 600px) {
+    .menu-navegacao {
+        flex-direction: column; /* Coloca o logo em cima e os links embaixo */
+        gap: 15px;
+    }
+    
+    .links-menu {
+        flex-direction: column; /* Coloca os links um embaixo do outro */
+        text-align: center;
+        width: 100%;
+    }
+}
