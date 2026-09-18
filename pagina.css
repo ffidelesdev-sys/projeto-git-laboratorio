@@ -1,0 +1,21 @@
+body {
+    background-color: #f4f4f4; /* Cor de fundo cinza claro */
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza o título principal */
+h1 {
+    color: #bb0000; /* Cor do texto cinza escuro */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 50px;
+}
+
+/* Estiliza os parágrafos */
+p {
+    color: #666666;
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.6; /* Espaçamento entre as linhas */
+    padding: 0 20px; /* Espaçamento interno nas laterais */
+}
